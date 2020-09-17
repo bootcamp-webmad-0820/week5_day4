@@ -1,0 +1,10 @@
+body {
+  padding: 50px;
+  font-family: sans-serif; }
+
+.glide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; }
+
+/*# sourceMappingURL=style.css.map */

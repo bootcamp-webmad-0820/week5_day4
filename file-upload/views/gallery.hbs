@@ -1,0 +1,31 @@
+<div class="container">
+
+    <h1>Galería de imágenes</h1>
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                {{#each photos}}
+                <li class="glide__slide">
+                    <img src="{{path}}" alt="{{name}}">
+                    <p>{{name}}</p>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+
+    <a href="/" class="btn btn-dark">Volver a inicio</a>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"
+    integrity="sha512-BXASbMmKLu+RC5TDnkupyhvrjiOQXILh/5zgIS8k5JAC71a73lNweVEg/X+9XJQ7GK22PH9WpztY3zqrji+xrQ=="
+    crossorigin="anonymous"></script>
+
+<script>
+    new Glide('.glide', {
+        startAt: 0,
+        perView: 3
+    }).mount()
+</script>

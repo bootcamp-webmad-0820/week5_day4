@@ -1,0 +1,18 @@
+<h1>Este uploader es <span id="typeme"></span></h1>
+<a href="/gallery" class="btn btn-dark">Ver galería</a>
+<a href="/files/local-upload" class="btn btn-dark">Subir imagen local</a>
+<a href="/files/cdn-upload" class="btn btn-dark">Subir imagen CDN</a>
+
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+
+<script>
+    new TypeIt("#typeme", {
+        strings: ['crema', 'fuegote', 'lo más', '<em>canela</em> fina'],
+        speed: 120,
+        loop: true,
+        cursorChar: ' _',
+        breakLines: false,
+        nextStringDelay: 2000
+    }).go()
+
+</script>
